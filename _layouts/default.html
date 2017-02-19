@@ -3,17 +3,14 @@
 
   {% include head.html %}
 
-  <body class="index">
+  <body>
 
-    {% include header.html %}
-    {% include docs_header.html %}
-    {% if page.title %}
-      {% include banner.html %}
-    {% endif %}
+    <main>
+      {{ content }}
+    </main>
 
-    {{ content }}
-    
     {% include footer.html %}
 
   </body>
+
 </html>
